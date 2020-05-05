@@ -17,4 +17,5 @@ async def on_message(message):
     if message.content.startswith("ex/test"):
         await message.channel.send("test 확인!")
 
-client.run("봇토큰")
+access_token = os.environ["BOT_TOKEN"]      
+client.run("access_token")
